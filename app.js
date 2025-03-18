@@ -42,4 +42,8 @@ function sortearAmigo() {
   const amigoSorteado = amigos[indiceAleatorio];
 
   document.getElementById('resultado').innerHTML = `O amigo sorteado é: ${amigoSorteado}`;
+
+  const listaAmigosElement = document.getElementById('listaAmigos');
+  listaAmigosElement.innerHTML = '';
+  amigos = [];
 }
